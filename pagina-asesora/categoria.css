@@ -1,0 +1,132 @@
+
+.category-hero {
+    padding: 80px 0 40px;
+    text-align: center;
+    background: radial-gradient(circle at bottom, #eff6ff 0%, #f8fafc 100%);
+}
+
+.category-hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5rem;
+    margin: 15px 0;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accordion-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.insurance-item {
+    background: white;
+    margin-bottom: 16px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.insurance-item[open] {
+    border-color: var(--accent);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.1);
+}
+
+summary {
+    padding: 24px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.summary-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-box {
+    width: 54px;
+    height: 54px;
+    background: #f1f5f9;
+    color: var(--accent);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.insurance-item[open] .icon-box {
+    background: var(--accent);
+    color: white;
+}
+
+.title-box h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.title-box p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.arrow {
+    color: var(--text-muted);
+    transition: transform 0.3s;
+}
+
+.insurance-item[open] .arrow {
+    transform: rotate(180deg);
+}
+
+
+.details-content {
+    padding: 0 24px 24px 98px; 
+    animation: slideDown 0.4s ease-out;
+}
+
+.details-content p {
+    color: var(--text-main);
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.btn-quote {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 600px) {
+    .details-content { padding: 0 24px 24px 24px; }
+    .summary-content { gap: 12px; }
+}

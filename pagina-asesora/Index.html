@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintegra seguros | Protección y Confianza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo-wrapper">
+                <div class="logo">Sintegra <span>Seguros</span></div>
+                <p class="subtitle">Astrid Escobar, Asesora en seguros</p>
+            </div>
+        
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <a href="#" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Chat Directo
+            </a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Protege lo que más importa con asesoría experta.</h1>
+                <p>No compres solo una póliza, obtén un respaldo real diseñado para tu familia y negocio.</p>
+                <div class="hero-btns">
+                    <a href="#contacto" class="btn-primary">Cotizar Ahora</a>
+                    <a href="#servicios" class="btn-outline">Ver Seguros</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                 <div class="image-container">
+             <img src="assets/bfc4d856-ac73-445d-acfc-68c5bd05aec2.jpg" alt="Asesora de Seguros Sintegra">
+        </div>
+    </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="container section">
+        <h2 class="section-title">Nuestros Seguros</h2>
+        <div class="services-grid">
+            <div class="card" onclick="window.location.href='vida.html'" style="cursor: pointer;">
+                <i class="fas fa-heartbeat"></i> <h3>Vida</h3>
+                <p>Protección integral para tu familia y tus seres queridos.</p>
+            </div>
+            <div class="card" onclick="window.location.href='movilidad.html'" style="cursor: pointer;">
+                <i class="fas fa-car"></i> <h3>Movilidad</h3>
+                <p>Autos, Motos, Bicis y más. Descubre cómo protegemos tu camino.</p>
+            </div>
+            <div class="card" onclick="window.location.href='hogar.html'" style="cursor: pointer;">
+                <i class="fas fa-home"></i>
+                <h3>Hogar</h3>
+                <p>Resguarda tu patrimonio contra cualquier imprevisto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="bg-slate-100 section">
+    <div class="container">
+        <div class="contact-form">
+            <h2>Solicita una Cotización</h2>
+            
+            <form action="https://formspree.io/f/mnjbkpay" method="POST">
+                <div class="form-group-row">
+                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                    <input type="tel" name="telefono" placeholder="Número de Teléfono" required>
+                    <input type="email" name="email" placeholder="Correo Electrónico" required>
+                </div>
+                
+                <select name="interes">
+                    <option value="Vida">Seguro de Vida</option>
+                    <option value="Movilidad">Seguro de Movilidad (Auto/Moto)</option>
+                    <option value="Hogar">Seguro de Hogar</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                
+                <textarea name="mensaje" placeholder="Cuéntame tus necesidades..."></textarea>
+                
+                <input type="hidden" name="_subject" value="Nueva solicitud de cotización - Sintegra Seguros">
+
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Asesora de Seguros. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/573162500444?text=Hola!%20Estoy%20interesado%20en%20Agendar%20una%20cita%20para%20cotizar%20un%20seguro." 
+    class="whatsapp-float" 
+    target="_blank" 
+    aria-label="Chat en WhatsApp">
+   <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+   </a>
+
+</body>
+</html>
